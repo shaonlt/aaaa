@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Alipay Mini Program</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #0070ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #005bb5;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openAlipay()">Open Alipay Mini Program</button>
+
+    <script>
+        function openAlipay() {
+            window.location.href = 'alipays://platformapi/startapp?appId=2021002113634235&page=pages/web-view/index?jumpUrl=https%3A%2F%2Fm-zl.mucfc.com%2F0ZFBMNPJD%2Floan%2F%23%2Fpages%2Findex%2Findex%3FneedLogin%3D1';
+        }
+    </script>
+</body>
+</html>
